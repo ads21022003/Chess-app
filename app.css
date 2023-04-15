@@ -1,0 +1,78 @@
+html {
+    height: 80%;
+}
+
+body {
+    background-color: deepskyblue;
+    height: 100%;
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120%;
+
+}
+
+#board {
+    width: 56vh;
+    height: 56vh;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 3px solid black;
+
+}
+
+.row:nth-of-type(2n+1) div {
+    background-color: black;
+    width: 7vh;
+    height: 7vh;
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    background-color: white;
+}
+
+.row:nth-of-type(2n+1) div:nth-of-type(2n) {
+    background-color: white;
+}
+
+.row:nth-of-type(2n) div {
+    background-color: white;
+    width: 7vh;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row:nth-of-type(2n) div:nth-of-type(2n) {
+    background-color: black;
+    
+}
+#board .row .select{
+    background-color: indianred;
+}
+
+#board .row .kill{
+    background-color: red ; 
+}
+#board .row .select:hover{
+    background-color: aquamarine;
+}
+#board .row .kill:hover{
+    background-color: aquamarine;
+}
+img{
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    transition: all 4s;
+    
+}
